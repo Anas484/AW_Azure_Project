@@ -1,0 +1,31 @@
+{
+    "name": "dynamic_ds_http",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "HttpLinkedService",
+            "type": "LinkedServiceReference"
+        },
+        "parameters": {
+            "para_relative_url": {
+                "type": "String"
+            }
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "HttpServerLocation",
+                "relativeUrl": {
+                    "value": "@dataset().para_relative_url",
+                    "type": "Expression"
+                }
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": []
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

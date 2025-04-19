@@ -1,0 +1,6 @@
+selected resource name:		DynamicGitToRaw
+selected resource type:		pipeline
+factory name:			adf-aw-project-anas
+factory location:		eastus
+subscription id:		ba68272c-fcd4-474f-9e8b-e8bfd015f13e
+time of download (UTC):		Sat, 19 Apr 2025 10:06:56 GMT
